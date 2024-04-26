@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click Events</title>
+</head>
+<body>
+
+<!-- First Element -->
+<button id="button1" onclick="alertValue('Button 1')">Click me - Button 1</button>
+
+<!-- Second Element -->
+<input type="text" id="input1" value="Input Value">
+<button id="button2" onclick="alertInputValue()">Click me - Button 2</button>
+
+<script>
+// Function to alert value
+function alertValue(value) {
+    alert(value);
+}
+
+// Function to alert input value
+function alertInputValue() {
+    var inputValue = document.getElementById("input1").value;
+    alert(inputValue);
+}
+</script>
+
+</body>
+</html>

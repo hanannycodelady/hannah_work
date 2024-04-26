@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fahrenheit to Celsius Converter</title>
+</head>
+<body>
+
+<h2>Temperature Converter</h2>
+
+<p>Enter a temperature in Fahrenheit:</p>
+<input type="text" id="fahrenheitInput">
+<button onclick="convertTemperature()">Convert</button>
+
+<script>
+// Function to convert Fahrenheit to Celsius
+function convertTemperature() {
+    // Get the value from the input field
+    var fahrenheitValue = document.getElementById("fahrenheitInput").value;
+    
+    // Convert Fahrenheit to Celsius
+    var celsiusValue = (parseFloat(fahrenheitValue) - 32) * (5/9);
+    
+    // Round the result to two decimal places
+    celsiusValue = celsiusValue.toFixed(2);
+    
+    // Display the result
+    alert(fahrenheitValue + "°F is equal to " + celsiusValue + "°C");
+}
+</script>
+
+</body>
+</html>
